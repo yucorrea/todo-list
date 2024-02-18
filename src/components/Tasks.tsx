@@ -36,8 +36,9 @@ export function Tasks ({ data, handleRemove, handleCompleted }: TasksProps) {
     </header>
 
     <div className={styles.tasks}>
-      {totalCreated > 0 ? data.map(task => (
+      {totalCreated > 0 ? data.map((task, index) => (
         <Task 
+          key={`${task.id}-${index}`}
           task={task} 
           handleRemoveTask={handleRemove} 
           handleMarkCompleted={handleCompleted} 
