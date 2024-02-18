@@ -1,0 +1,46 @@
+.info  {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box strong {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: bold;
+} 
+
+.box span {
+  padding: 0.125rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  font-size: 0.75rem;
+  color: var(--gray-200);
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.created {
+  color: var(--blue);
+} 
+
+.completed {
+  color: var(--purple);
+} 
+
+.tasks {
+  width: 100%;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  max-height: 28.17rem;
+}
